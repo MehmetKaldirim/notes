@@ -1,6 +1,7 @@
 package com.mathdenizi.notes.services.impl;
 
 import com.mathdenizi.notes.models.Note;
+import com.mathdenizi.notes.services.NoteService;
 import com.mathdenizi.notes.repositories.NoteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,8 @@
 package com.mathdenizi.notes.services;
 
 
+import com.mathdenizi.notes.models.Note;
+
 import java.util.List;
 /**
  * Created by mathdenizi
