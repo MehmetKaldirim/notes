@@ -5,6 +5,7 @@ import com.mathdenizi.notes.models.Role;
 import com.mathdenizi.notes.models.User;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Created by mathdenizi
@@ -34,4 +35,8 @@ public interface UserService {
     void generatePasswordResetToken(String email);
 
     void resetPassword(String token, String newPassword);
+
+    Optional<User> findByEmail(String email);
+
+    User registerUser(User user);
 }
