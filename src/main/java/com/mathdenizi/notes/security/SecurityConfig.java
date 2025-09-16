@@ -63,6 +63,8 @@ public class SecurityConfig {
                 .csrf(csrf ->
                 csrf.csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
                         .ignoringRequestMatchers("/api/auth/public/**")
+                        //for server
+                        .ignoringRequestMatchers("/api/notes/**")
         );
         //http.csrf(AbstractHttpConfigurer::disable);
         http.authorizeHttpRequests((requests)
